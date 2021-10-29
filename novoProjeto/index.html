@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>    
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <script lang="javascript">
+        
+        function log1(){ // declarando a função.
+
+            setInterval(() => log2(), 5000); // espera 5 segundos e executa a função log2(). 
+            console.log("log1"); // console log é como se fosse o system.out.print.
+
+            // aqui a função está declarada mas não está sendo chamada.
+        }
+
+        function log2(){
+            console.log("log2");
+        }
+
+        log1(); // chamando a função
+    </script>
+
+    <body>
+        Teste
+    </body>
+
+</html>
